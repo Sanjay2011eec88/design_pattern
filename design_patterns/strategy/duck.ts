@@ -6,6 +6,14 @@ export abstract class Duck {
 
     constructor() {}
 
+    setFlyBehavior(fb: FlyBehavior){
+        this.flyBehavior = fb;
+    }
+
+    setQuackBehavior(qb: QuackBehavior){
+        this.quackBehavior = qb;
+    }
+
     abstract display():void;
 
     performQuack():void{
